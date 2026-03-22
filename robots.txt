@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://gym4life.com/sitemap.xml
