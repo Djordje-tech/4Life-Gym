@@ -16,7 +16,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://cdnjs.cloudflare.com">
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist:wght@100;200;300;400;500&family=Great+Vibes&display=swap" rel="stylesheet">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 <style>
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
 :root{
@@ -425,7 +425,8 @@ addEventListener('resize',setH);addEventListener('load',function(){setH();tick()
 document.querySelectorAll('img').forEach(function(i){if(i.complete)setH();else i.onload=setH});
 
 /* LOADER */
-addEventListener('load',function(){document.getElementById('lf').style.width='100%';setTimeout(function(){document.getElementById('ld').classList.add('done')},2600)});
+addEventListener('load',function(){document.getElementById('lf').style.width='100%';setTimeout(function(){document.getElementById('ld').classList.add('done')},2000)});
+setTimeout(function(){document.getElementById('lf').style.width='100%';setTimeout(function(){document.getElementById('ld').classList.add('done')},800)},4000);
 
 /* CURSOR */
 var cu=document.getElementById('cur'),cd=document.getElementById('crd'),mx2=-100,my2=-100,cx=-100,cy=-100;
